@@ -122,3 +122,21 @@ urlpatterns = [path('get-current-usd/', GetCurrentUSD.as_view(), name='get_curre
 
 
 > **Примечание:** Весь код был написан с соблюдением рекомендаций PEP8 (Style Guide for Python Code) и принципа DRY (Don't Repeat Yourself).
+
+
+## Запуск проекта
+
+1. Перейти в папку проекта
+```bash
+cd usd_currency
+```
+2. Сформировать и применить миграции
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+3. Запустить сервер
+```bash
+python manage.py runserver
+```
